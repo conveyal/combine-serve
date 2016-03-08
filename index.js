@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 /** Combine multiple APIs together and serve them as one */
 
 import connect from 'connect'

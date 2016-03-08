@@ -1,6 +1,6 @@
 {
   "name": "combine-serve",
-  "version": "0.0.1",
+  "version": "0.0.4",
   "description": "combine-serve is used to combine multiple APIs and static files and serve them from a single origin.",
   "main": "build/index.js",
   "bin": {
@@ -28,7 +28,6 @@
   "homepage": "https://github.com/conveyal/combine-serve#readme",
   "dependencies": {
     "connect": "^3.4.1",
-    "http-proxy": "^1.13.2",
     "proxy-middleware": "^0.15.0",
     "serve-static": "^1.10.2"
   },
