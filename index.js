@@ -12,6 +12,9 @@ let app = connect()
 
 let port = 7941
 
+// will be left undefined if user does not specify host
+let host
+
 for (let i = 0; i < args.length; i += 3) {
   let mode = args[i]
   let path = args[i + 1]
@@ -26,9 +29,12 @@ for (let i = 0; i < args.length; i += 3) {
   } else if (mode === '--port') {
     port = Number(args[i + 1])
     i-- // only one option
+  } else if (mode === '--host') {
+    host = args[i + 1]
+    i-- // only one option
   }
 }
 
-app.listen(port)
+app.listen(port, host)
 
-console.log(`Listening for HTTP on port ${port}`)
+console.log(`Listening for HTTP on port ${port} ${host ? 'and host ' + host : ''}`)
