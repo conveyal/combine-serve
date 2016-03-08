@@ -1,0 +1,41 @@
+{
+  "name": "combine-serve",
+  "version": "0.0.1",
+  "description": "combine-serve is used to combine multiple APIs and static files and serve them from a single origin.",
+  "main": "build/index.js",
+  "bin": {
+    "combine-serve": "build/index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublish": "babel index.js > build/index.js"
+  },
+  "babel": {
+    "presets": [
+      "es2015",
+      "stage-0"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/conveyal/combine-serve.git"
+  },
+  "author": "Matthew Wigginton Conway <mconway@conveyal.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/conveyal/combine-serve/issues"
+  },
+  "homepage": "https://github.com/conveyal/combine-serve#readme",
+  "dependencies": {
+    "connect": "^3.4.1",
+    "http-proxy": "^1.13.2",
+    "proxy-middleware": "^0.15.0",
+    "serve-static": "^1.10.2"
+  },
+  "devDependencies": {
+    "babel": "^6.5.2",
+    "babel-cli": "^6.6.5",
+    "babel-preset-es2015": "^6.6.0",
+    "babel-preset-stage-0": "^6.5.0"
+  }
+}
