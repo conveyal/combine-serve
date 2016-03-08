@@ -1,6 +1,6 @@
 {
   "name": "combine-serve",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "combine-serve is used to combine multiple APIs and static files and serve them from a single origin.",
   "main": "build/index.js",
   "bin": {
